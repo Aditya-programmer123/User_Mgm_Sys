@@ -10,10 +10,10 @@
     {
       "src": "/(.*)",
       "dest": "server.js"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
     }
-  ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "NODE_ENV": "production"
-  }
+  ]
 }
